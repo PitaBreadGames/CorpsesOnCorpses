@@ -1,40 +1,104 @@
 fileFormatVersion: 2
-guid: f666a43b414586a499cfedc84db04c29
+guid: 20b3b7c1fbe21f240a04cfe77c40a3cf
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Bip01 R Forearm
-    100002: Bip01 R Hand
-    100004: Bip01 R UpperArm
-    100006: R Forearm
-    100008: R Hand
-    100010: R UpperArm
-    100012: R_Arm
-    100014: //RootNode
-    100016: transform1
-    400000: Bip01 R Forearm
-    400002: Bip01 R Hand
-    400004: Bip01 R UpperArm
-    400006: R Forearm
-    400008: R Hand
-    400010: R UpperArm
-    400012: R_Arm
-    400014: //RootNode
-    400016: transform1
+    100000: ' L Pelvis'
+    100002: ' L Thigh'
+    100004: ' R Pelvis'
+    100006: ' R Thigh'
+    100008: Bip01
+    100010: Bip01 Head
+    100012: Bip01 L Calf
+    100014: Bip01 L Clavicle
+    100016: Bip01 L Foot
+    100018: Bip01 L Thigh
+    100020: Bip01 L Toe0
+    100022: Bip01 L UpperArm
+    100024: Bip01 Neck
+    100026: Bip01 Pelvis
+    100028: Bip01 R Calf
+    100030: Bip01 R Clavicle
+    100032: Bip01 R Foot
+    100034: Bip01 R Thigh
+    100036: Bip01 R Toe0
+    100038: Bip01 R UpperArm
+    100040: Bip01 Spine
+    100042: Bip01 Spine1
+    100044: BOdy
+    100046: Bone01
+    100048: L Calf
+    100050: L Spine
+    100052: L Spine1
+    100054: //RootNode
+    100056: R Calf
+    100058: R Spine
+    100060: R Spine1
+    400000: ' L Pelvis'
+    400002: ' L Thigh'
+    400004: ' R Pelvis'
+    400006: ' R Thigh'
+    400008: Bip01
+    400010: Bip01 Head
+    400012: Bip01 L Calf
+    400014: Bip01 L Clavicle
+    400016: Bip01 L Foot
+    400018: Bip01 L Thigh
+    400020: Bip01 L Toe0
+    400022: Bip01 L UpperArm
+    400024: Bip01 Neck
+    400026: Bip01 Pelvis
+    400028: Bip01 R Calf
+    400030: Bip01 R Clavicle
+    400032: Bip01 R Foot
+    400034: Bip01 R Thigh
+    400036: Bip01 R Toe0
+    400038: Bip01 R UpperArm
+    400040: Bip01 Spine
+    400042: Bip01 Spine1
+    400044: BOdy
+    400046: Bone01
+    400048: L Calf
+    400050: L Spine
+    400052: L Spine1
+    400054: //RootNode
+    400056: R Calf
+    400058: R Spine
+    400060: R Spine1
     2100000: Zombie
-    4300000: R Hand
-    4300002: R Forearm
-    4300004: R UpperArm
+    2300000: ' L Pelvis'
+    2300002: ' L Thigh'
+    2300004: ' R Pelvis'
+    2300006: ' R Thigh'
+    2300008: L Calf
+    2300010: L Spine
+    2300012: L Spine1
+    2300014: R Calf
+    2300016: R Spine
+    2300018: R Spine1
+    3300000: ' L Pelvis'
+    3300002: ' L Thigh'
+    3300004: ' R Pelvis'
+    3300006: ' R Thigh'
+    3300008: L Calf
+    3300010: L Spine
+    3300012: L Spine1
+    3300014: R Calf
+    3300016: R Spine
+    3300018: R Spine1
+    4300000: L Spine
+    4300002: L Spine1
+    4300004: ' R Pelvis'
+    4300006: ' L Pelvis'
+    4300008: R Spine
+    4300010: R Spine1
+    4300012: ' R Thigh'
+    4300014: R Calf
+    4300016: ' L Thigh'
+    4300018: L Calf
+    7400000: Take 001
     9500000: //RootNode
-    13700000: R Forearm
-    13700002: R Hand
-    13700004: R UpperArm
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Zombie
-    second: {fileID: 2100000, guid: b0fd747f75bab0047a342ac651708ec1, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,7 +129,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
