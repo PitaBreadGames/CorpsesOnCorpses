@@ -96,7 +96,12 @@ ModelImporter:
     13700014: R Calf
     13700016: R Spine
     13700018: R Spine1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zombie
+    second: {fileID: 2100000, guid: 7c60035102ff10a47b6fb68fbf9fe1ab, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
