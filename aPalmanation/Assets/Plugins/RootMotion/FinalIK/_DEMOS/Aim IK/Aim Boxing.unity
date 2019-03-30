@@ -280,10 +280,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixTransforms: 1
   solver:
-    IKPosition: {x: 1.8469585, y: 0.50856787, z: 2.0059528}
+    IKPosition: {x: 1.846958, y: 0.5085675, z: 2.005953}
     IKPositionWeight: 1
     root: {fileID: 573142177}
-    target: {fileID: 0}
+    target: {fileID: 2112400638}
     tolerance: 0
     maxIterations: 4
     useRotationLimits: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
     transform: {fileID: 441461755}
     axis: {x: 0, y: 0, z: 1}
     poleAxis: {x: 0, y: 1, z: 0}
-    polePosition: {x: -1.4481627, y: 3.1797447, z: 2.0895588}
+    polePosition: {x: -1.4481627, y: 3.179745, z: 2.0895586}
     poleWeight: 0
     poleTarget: {fileID: 0}
     clampWeight: 0.2
@@ -438,11 +438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 959d14bf134f54a6e993fe6ca6e063c0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -1.62920685e-07
+      value: -0.00000016292068
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 959d14bf134f54a6e993fe6ca6e063c0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 959d14bf134f54a6e993fe6ca6e063c0, type: 3}
       propertyPath: m_Controller
