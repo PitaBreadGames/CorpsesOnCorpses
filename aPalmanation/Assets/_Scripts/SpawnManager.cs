@@ -14,21 +14,22 @@ public class SpawnManager : MonoBehaviour
     private void OnDisable()
     {
         instance = null;
+        StopCoroutine(CoSpawnItem());
     }
 
     [SerializeField]
     private List<GameObject> _Spawnables = new List<GameObject>();
     [SerializeField]
-    private List<Vector3> _SpawnPoints = new List<Vector3>();
+    private List<Transform> _SpawnPoints = new List<Transform>();
     [SerializeField]
-    private List<GameObject> _SpawnablesInGame = new List<GameObject>();
+    int _NumberOfSpawns;
     [SerializeField]
     private float _SpawnWait,
         _StartWait,
         _SpawnMinWait,
         _SpawnMaxWait;
     [SerializeField]
-    private bool _IsSpawning;
+    private bool _StopSpawning;
 
     private void Start()
     {
@@ -38,16 +39,17 @@ public class SpawnManager : MonoBehaviour
     IEnumerator CoSpawnItem()
     {
         yield return new WaitForSeconds(_StartWait);
-        while (_IsSpawning)
+        while (_StopSpawning == false)
         {
             int _SpawnablesIndex = Random.Range(0, _Spawnables.Count - 1);
             GameObject _ObjectToSpawn = _Spawnables[_SpawnablesIndex];
             int _SpawnPosIndex = Random.Range(0, _SpawnPoints.Count - 1);
-            Vector3 _SpawnPos = _SpawnPoints[_SpawnPosIndex];
+            Vector3 _SpawnPos = _SpawnPoints[_SpawnPosIndex].position;
 
             Instantiate(_ObjectToSpawn, _SpawnPos, Quaternion.identity);
 
             _SpawnWait = Random.Range(_SpawnMinWait, _SpawnMaxWait);
+            ++_NumberOfSpawns;
             yield return new WaitForSeconds(_SpawnWait);
         }
 
