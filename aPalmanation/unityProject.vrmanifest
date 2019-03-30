@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.apalmanation.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\Program Files (x86)\\Unity Projects\\CorpsesOnCorpses\\aPalmanation\\actions.json",
+      "action_manifest_path": "D:\\Unity\\UnityRepos\\CorpsesOnCorpses\\aPalmanation\\actions.json",
       "strings": {
         "en_us": {
           "name": "aPalmanation [Testing]"
