@@ -5,6 +5,7 @@ using RootMotion.FinalIK;
 
 public class LimbIKTargeter : MonoBehaviour
 {
+    public LimbIK limbIK;
     public AimIK aimIK; // Reference to the AimIK component
     public Transform playerHeadTransform; // The hitting point as in the animation
     public Transform reachPoint;
@@ -28,7 +29,9 @@ public class LimbIKTargeter : MonoBehaviour
         if (playerHeadTransform == null)
         {
             print("I CAN'T FIND THE P-HEAD");
-        }   
+        }
+
+        limbIK.solver.target = playerHeadTransform;
     }
 
     void LateUpdate()
