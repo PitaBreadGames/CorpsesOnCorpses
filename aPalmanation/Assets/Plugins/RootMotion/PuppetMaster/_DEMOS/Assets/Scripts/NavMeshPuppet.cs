@@ -13,6 +13,12 @@ namespace RootMotion.Demos
 
         public float rotationSpeed = 20f;
         public float meleeRange = 1.2f;
+
+        private void Start()
+        {
+           // target = PlayerHeadReference.instance.transform;
+        }
+
         void Update()
         {
             // Keep the agent disabled while the puppet is unbalanced.
