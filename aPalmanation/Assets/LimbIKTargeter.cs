@@ -5,9 +5,13 @@ using RootMotion.FinalIK;
 
 public class LimbIKTargeter : MonoBehaviour
 {
+    public LimbIK limbIK;
     public AimIK aimIK; // Reference to the AimIK component
     public Transform playerHeadTransform; // The hitting point as in the animation
     public Transform reachPoint;
+
+    public float meleeRange = 1.25f;
+
 
     private void OnEnable()
     {
@@ -19,16 +23,49 @@ public class LimbIKTargeter : MonoBehaviour
         {
             print("CAN'T FIND MY AIM IK!");
         }
-
-        if (playerHeadTransform == null)
+        if(limbIK == null)
         {
+            limbIK = GetComponent<LimbIK>();
+        }
+
+        if (playerHeadTransform == null && PlayerHeadReference.instance)
+        {
+            
             playerHeadTransform = PlayerHeadReference.instance.transform;
             //aimIK.solver.IKPosition = PlayerHeadReference.instance.transform.position;
         }
         if (playerHeadTransform == null)
         {
             print("I CAN'T FIND THE P-HEAD");
-        }   
+        }
+
+        limbIK.solver.target = playerHeadTransform;
+    }
+
+    private void Update()
+    {
+        if(!playerHeadTransform && PlayerHeadReference.instance)
+        {
+            playerHeadTransform = PlayerHeadReference.instance.transform;
+            limbIK.solver.target = playerHeadTransform;
+        }
+        if(playerHeadTransform)
+        {
+            if(IsInMeleeRangeOf(playerHeadTransform))
+            {
+                limbIK.solver.IKPositionWeight = 1;
+            }
+            else
+            {
+                limbIK.solver.IKPositionWeight = 0;
+            }
+        }
+    }
+
+    private bool IsInMeleeRangeOf(Transform target)
+    {
+        float distance = Vector3.Distance(transform.position, target.position);
+        return distance < meleeRange;
     }
 
     void LateUpdate()
