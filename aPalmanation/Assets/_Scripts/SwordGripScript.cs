@@ -142,9 +142,10 @@ namespace Valve.VR.InteractionSystem
             velocityEstimator.BeginEstimatingVelocity();
 
             attachTime = Time.time;
-            attachPosition = transform.position;
-            attachRotation = transform.rotation;
-
+            attachPosition =  transform.position;
+            attachRotation =  transform.rotation;
+           // attachPosition = Vector3.zero;// transform.position;
+           // attachRotation = Quaternion.identity; // transform.rotation;
         }
 
 
