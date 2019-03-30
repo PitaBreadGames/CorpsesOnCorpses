@@ -22,16 +22,17 @@ public class LimbIKTargeter : MonoBehaviour
         if (playerHeadTransform == null)
         {
             playerHeadTransform = PlayerHeadReference.instance.transform;
+            aimIK.solver.IKPosition = PlayerHeadReference.instance.transform.position;
         }
         else
         {
             print("I CAN'T FIND THE P-HEAD");
-        }
+        }   
     }
 
     void LateUpdate()
     {
-        if (playerHeadTransform)
+        if (playerHeadTransform != null)
         {
             // Rotate the aim Transform to look at the point, where the fist hits it's target in the animation.
             // This will set the animated hit direction as the default starting point for Aim IK (direction for which Aim IK has to do nothing).

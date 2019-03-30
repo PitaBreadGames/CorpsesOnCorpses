@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHeadReference : MonoBehaviour
+public class AimTargetReference : MonoBehaviour
 {
-    public static PlayerHeadReference instance;
+    public AimTargetReference instance;
 
     private void OnEnable()
     {
         if (instance == null)
-        {
-            instance = this;
-        }
+            instance = this;    
     }
 
     private void OnDisable()
