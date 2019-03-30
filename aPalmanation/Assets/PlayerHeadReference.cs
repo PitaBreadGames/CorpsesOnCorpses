@@ -6,6 +6,19 @@ public class PlayerHeadReference : MonoBehaviour
 {
     public static PlayerHeadReference instance;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+        else if (instance == null)
+        {
+            print("Didn't assign instance");
+        }
+    }
+
     private void OnEnable()
     {
         if (instance == null)
