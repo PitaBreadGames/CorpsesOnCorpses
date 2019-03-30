@@ -5,7 +5,19 @@ using UnityEngine;
 public class PlayerHeadReference : MonoBehaviour
 {
     public static PlayerHeadReference instance;
-    public Transform playerHeadTransform;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+        else if (instance == null)
+        {
+            print("Didn't assign instance");
+        }
+    }
 
     private void OnEnable()
     {

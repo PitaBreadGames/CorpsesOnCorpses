@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerHead
+  - leftHand
+  - rightHand
   layers:
   - Default
   - TransparentFX
