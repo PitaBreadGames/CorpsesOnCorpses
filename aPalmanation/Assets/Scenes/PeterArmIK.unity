@@ -991,7 +991,7 @@ PrefabInstance:
     - target: {fileID: 8377036966315597341, guid: 1ee94822a0fda39488326fd6578de1b7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.572
+      value: 2.58
       objectReference: {fileID: 0}
     - target: {fileID: 8377036966315597341, guid: 1ee94822a0fda39488326fd6578de1b7,
         type: 3}
@@ -1001,7 +1001,7 @@ PrefabInstance:
     - target: {fileID: 8377036966315597341, guid: 1ee94822a0fda39488326fd6578de1b7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.13
+      value: -0.057
       objectReference: {fileID: 0}
     - target: {fileID: 8377036966315597341, guid: 1ee94822a0fda39488326fd6578de1b7,
         type: 3}
@@ -1087,7 +1087,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerHeadTransform
       value: 
-      objectReference: {fileID: 1024244322}
+      objectReference: {fileID: 0}
     - target: {fileID: 8377036966315229759, guid: 1ee94822a0fda39488326fd6578de1b7,
         type: 3}
       propertyPath: reachPoint
